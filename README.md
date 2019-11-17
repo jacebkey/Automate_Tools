@@ -2,4 +2,4 @@
 A collections of python automation scripts
 
 
-### Hi
+### mclip.py - A multi-clipboard program
