@@ -3,9 +3,9 @@
 print("Enter the English message to translate into Pig Latin")
 message = input()
 
-VOWELS = ('a','e','i','o','u','y')
+VOWELS = ("a", "e", "i", "o", "u", "y")
 
-pigLatin = [] # A list of words in Pig Latin
+pigLatin = []  # A list of words in Pig Latin
 
 for word in message.split():
     # Separate the non-letters at the start of this word:
@@ -29,9 +29,9 @@ for word in message.split():
     wasUpper = word.isupper()
     wasTitle = word.istitle()
 
-    word = word.lower() # make the word lowercase for translation
+    word = word.lower()  # make the word lowercase for translation
 
-    #Separate the consonants at the start of this word:
+    # Separate the consonants at the start of this word:
     prefixConsonants = ""
     while len(word) > 0 and not word[0] in VOWELS:
         prefixConsonants += word[0]
